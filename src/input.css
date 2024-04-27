@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+    html {
+        font-family: "Rubik", system-ui, sans-serif;
+    }
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-orange-primary: #F36A3E;
+}
+
+.menu-list1 {
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    z-index: 10;
+    gap: 24px;
+}
+
+.menu-list1>li {
+    width: 294px;
+    border-bottom: 0.3px solid;
+    border-color: #CCCCCC;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list1>li>a {
+    opacity: 80%;
+}
+
+.show-list {
+    right: 0%;
+}
+
+.menu-icon {
+    display: flex;
+}
+
+.menu-icon>span {
+    background-color: var(--color-black);
+}
+
+.active-icon1 {
+    top: 12px;
+    transition: all 300ms linear;
+}
+
+.active-icon1>span {
+    background-color: var(--color-orange-primary);
+    position: absolute;
+    transition: all 300ms linear;
+}
+
+.active-icon1 .line2 {
+    display: none;
+}
+
+.active-icon1 .line1 {
+    transform: rotate(-45deg);
+    top: 0%;
+}
+
+.active-icon1 .line3 {
+    transform: rotate(45deg);
+    top: 0%;
+}
+
+.border-transparent{
+    border-color: transparent !important;
+}
+
+@media (min-width768px) {
+    
+}
+
+@media (min-width:1024px) {
+    .menu-list1 {
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        right: 0%;
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        z-index: 10;
+    }
+
+    .menu-list1>li {
+        width: fit-content;
+        border-bottom: none;
+        padding-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-list1>li>a {
+        opacity: 100%;
+    }
+}
