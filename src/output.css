@@ -620,16 +620,32 @@ html {
   right: -100%;
 }
 
-.-top-5 {
-  top: -1.25rem;
+.-top-1\/2 {
+  top: -50%;
 }
 
 .bottom-0 {
   bottom: 0px;
 }
 
+.bottom-1\/4 {
+  bottom: 25%;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-1\/4 {
+  left: 25%;
 }
 
 .right-0 {
@@ -644,112 +660,8 @@ html {
   top: 12%;
 }
 
-.-top-8 {
-  top: -2rem;
-}
-
-.-top-16 {
-  top: -4rem;
-}
-
-.-top-56 {
-  top: -14rem;
-}
-
-.-top-52 {
-  top: -13rem;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.top-2\/4 {
-  top: 50%;
-}
-
-.top-1\/3 {
-  top: 33.333333%;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-2\/3 {
-  top: 66.666667%;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.bottom-1\/4 {
-  bottom: 25%;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.top-11 {
-  top: 2.75rem;
-}
-
-.left-1\/4 {
-  left: 25%;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
-.top-1\/4 {
-  top: 25%;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[16\] {
-  top: 16;
-}
-
-.top-\[16\%\] {
-  top: 16%;
-}
-
-.top-\[18\%\] {
-  top: 18%;
-}
-
-.top-\[1\%\] {
-  top: 1%;
-}
-
 .top-\[17\%\] {
   top: 17%;
-}
-
-.-top-12 {
-  top: -3rem;
-}
-
-.-top-1\/2 {
-  top: -50%;
 }
 
 .-z-10 {
@@ -768,9 +680,24 @@ html {
   z-index: 1;
 }
 
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mt-1 {
@@ -787,6 +714,10 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .block {
@@ -821,6 +752,10 @@ html {
   min-height: 100vh;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-\[174px\] {
   width: 174px;
 }
@@ -837,10 +772,6 @@ html {
   width: 100%;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -849,24 +780,20 @@ html {
   max-width: 36rem;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
+.max-w-\[\] {
+  max-width: ;
 }
 
-.animate-bounce {
-  animation: bounce 1s infinite;
+.max-w-\[499px\] {
+  max-width: 499px;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -905,8 +832,16 @@ html {
   border-radius: 41px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-b-2 {
@@ -937,6 +872,15 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -956,6 +900,10 @@ html {
   text-align: center;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .text-\[32px\] {
   font-size: 32px;
 }
@@ -963,6 +911,10 @@ html {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -994,6 +946,16 @@ html {
 
 .opacity-70 {
   opacity: 0.7;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .duration-300 {
@@ -1032,10 +994,47 @@ html {
   border-color: transparent !important;
 }
 
-@media (min-width:768px) {
-  .d-md-none {
-    display: none !important;
-  }
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+
+.slick-slide>div {
+  display: flex;
+  width: 100%;
+  margin: 8px;
+}
+
+.slider-box:hover div h2 {
+  color: #F36A3E;
+}
+
+.slick-dots li,
+.slick-dots li button:before,
+.slick-dots li button {
+  background: #000000;
+  width: 16px;
+  height: 5px;
+  border-radius: 6px;
+  opacity: 0.1;
+  font-size: 0;
+  padding: 0;
+}
+
+.slick-dots li.slick-active button:before,.slick-dots li.slick-active {
+  opacity: 100%;
+  background: #F36A3E;
+  width: 23px;
+  transition: all 300ms linear;
+}
+
+.hover\:border-\[\#F9C2B2\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 194 178 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#F36A3E\]:hover {
@@ -1124,6 +1123,10 @@ html {
   .lg\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 
   .lg\:w-fit {

@@ -1,4 +1,4 @@
-AOS.init({once:true});
+AOS.init({ once: true });
 
 let menuicon = document.querySelector(".menu-icon");
 let menulist = document.querySelector(".menu-list1");
@@ -15,4 +15,47 @@ menuicon.addEventListener("click", function () {
     line1.classList.toggle("bg-black");
     line3.classList.toggle("bg-[#F36A3E]");
     line3.classList.toggle("bg-black");
+});
+
+
+$('.img-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    dots: true,
+    infinite: false,
+    arrows: false,
+});
+
+
+$('.slider-sec2').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1000,
+    dots: true,
+    infinite: false,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
