@@ -10,70 +10,12 @@
     }
 }
 
-:root {
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-orange-primary: #F36A3E;
-}
-
-
-.menu-list1 {
-    /* flex-direction: column;
-    position: absolute;
-    top: 0%;
-    right: -100%;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-white);
-    z-index: 10;
-    gap: 24px; */
-
-    flex-direction: row;
-    position: relative;
-    top: 0;
-    right: 0%;
-    width: fit-content;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    z-index: 10;
-}
-
-.menu-list1>li {
-    width: 294px;
-    border-bottom: 0.3px solid;
-    border-color: #CCCCCC;
-    padding-bottom: 24px;
-    display: flex;
-    justify-content: center;
-}
-
-.menu-list1>li>a {
-    opacity: 80%;
-}
-
-.show-list {
-    right: 0%;
-}
-
-.menu-icon {
-    z-index: 15;
-}
-
-.menu-icon>span {
-    background-color: var(--color-black);
-}
-
 .active-icon1 {
     top: 12px;
     transition: all 300ms linear;
 }
 
 .active-icon1>span {
-    background-color: var(--color-orange-primary);
     position: absolute;
     transition: all 300ms linear;
 }
@@ -99,44 +41,5 @@
 @media (min-width:768px) {
     .d-md-none {
         display: none !important;
-    }
-}
-
-@media (max-width:1024.9px) {
-    .menu-list1 {
-        /* flex-direction: row;
-        position: relative;
-        top: 0;
-        right: 0%;
-        width: fit-content;
-        height: fit-content;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        z-index: 10; */
-
-        flex-direction: column;
-        position: absolute;
-        top: 0%;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--color-white);
-        z-index: 10;
-        gap: 24px;
-    }
-
-    .menu-list1>li {
-        width: fit-content;
-        border-bottom: none;
-        padding-bottom: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .menu-list1>li>a {
-        opacity: 100%;
     }
 }
