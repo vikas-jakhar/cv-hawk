@@ -69,9 +69,15 @@
     padding: 0;
 }
 
-.slick-dots li.slick-active button:before,.slick-dots li.slick-active {
+.slick-dots li.slick-active button:before,
+.slick-dots li.slick-active {
     opacity: 100%;
     background: #F36A3E;
     width: 23px;
     transition: all 300ms linear;
+}
+
+.prev1:hover svg path,
+.next1:hover svg path {
+    fill: #F36A3E;
 }

@@ -27,7 +27,6 @@ $('.img-slider').slick({
     arrows: false,
 });
 
-
 $('.slider-sec2').slick({
     slidesToShow: 3,
     slidesToScroll: 2,
@@ -58,4 +57,14 @@ $('.slider-sec2').slick({
             }
         }
     ]
+});
+
+$('.slider-sec7').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    prevArrow: "prev1",
+    nextArrow: "next1",
+    dots: true,
+    infinite: true,
 });
