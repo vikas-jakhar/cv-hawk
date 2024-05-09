@@ -63,8 +63,8 @@ $('.slider-sec7').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
-    prevArrow: "prev1",
-    nextArrow: "next1",
-    dots: true,
+    prevArrow: ".prev1",
+    nextArrow: ".next1",
+    dots: false,
     infinite: true,
 });
