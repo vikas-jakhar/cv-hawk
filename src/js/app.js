@@ -68,3 +68,13 @@ $('.slider-sec7').slick({
     dots: false,
     infinite: true,
 });
+
+const accordionHeading = document.querySelectorAll(".accordion-heading");
+
+accordionHeading.forEach(e => {
+    e.addEventListener("click", () => {
+        const activeacc = document.querySelector(".accordion-body.active");
+        e.closest(".accordion-body").classList.toggle("active");
+        activeacc && activeacc.classList.remove("active");
+    });
+});
