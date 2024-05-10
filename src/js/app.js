@@ -78,3 +78,25 @@ accordionHeading.forEach(e => {
         activeacc && activeacc.classList.remove("active");
     });
 });
+
+
+let scrolltop = document.querySelector(".scrolltop");
+
+scrolltop.addEventListener("click", function () {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth',
+    });
+});
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        scrolltop.style.display = "grid";
+    } else {
+        scrolltop.style.display = "none";
+    }
+};
+
+document.body.scrollTop = document.documentElement.scrollTop = 0;
