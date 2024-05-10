@@ -100,3 +100,11 @@ function scrollFunction() {
 };
 
 document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+let preloder = document.querySelector(".preloder");
+
+preloder.style.display = "grid"
+
+setTimeout(() => {
+    preloder.style.display= "none"
+},1000)
