@@ -101,10 +101,10 @@ function scrollFunction() {
 
 document.body.scrollTop = document.documentElement.scrollTop = 0;
 
-let preloder = document.querySelector(".preloder");
+let preloader = document.querySelector(".preloader");
 
-preloder.style.display = "grid"
+preloader.style.display = "grid"
 
 setTimeout(() => {
-    preloder.style.display= "none"
+    preloader.style.display= "none"
 },1000)
